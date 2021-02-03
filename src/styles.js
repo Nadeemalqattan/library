@@ -2,14 +2,36 @@ import styled from "styled-components";
 // import { Link, NavLink } from "react-router-dom";
 
 export const Title = styled.h1`
+  padding: 0.5em;
   text-align: center;
+`;
+
+export const NavBarWrapper = styled.nav`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  align: center;
+  display: block;
+  padding: 0.5em;
+
+  img {
+    height: 200px;
+    border: 5px solid white;
+  }
+
+  h4 {
+    text-align: left;
+  }
+  p {
+    align: right;
+  }
 `;
 
 export const BookWrapper = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  width: 25%;
+  width: 80%;
   margin: 2em;
   align: center;
   display: block;
