@@ -5,6 +5,33 @@ export const Title = styled.h1`
   text-align: center;
 `;
 
+export const BookWrapper = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 25%;
+  margin: 2em;
+  align: center;
+  display: block;
+  padding: 0.5em;
+
+  button {
+    margin: 0.5em;
+  }
+
+  img {
+    height: 200px;
+    border: 5px solid white;
+  }
+
+  h3 {
+    text-align: left;
+  }
+  p {
+    align: right;
+  }
+`;
+
 export const MemberWrapper = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;

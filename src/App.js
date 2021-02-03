@@ -10,18 +10,18 @@ import MemberForm from "./components/MemberForm";
 function App() {
   return (
     <Switch>
-      {/* <Route exact Path="/">
-        <Home />
-      </Route> */}
       <Route path="/members/new">
         <MemberForm />
+      </Route>
+      <Route Path="/books">
+        <Books />
       </Route>
       <Route Path="/members">
         <Members />
       </Route>
 
-      <Route Path="/books">
-        <Books />
+      <Route exact Path="/">
+        <Home />
       </Route>
     </Switch>
   );
