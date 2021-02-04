@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavBarWrapper } from "../styles";
 
-const NavBar = (props) => {
+const NavBar = () => {
   return (
     <NavBarWrapper>
       <nav className="navbar navbar-inverse">

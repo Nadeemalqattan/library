@@ -5,6 +5,9 @@ export const Title = styled.h1`
   padding: 0.5em;
   text-align: center;
 `;
+export const BooksTitle = styled.h1`
+  text-align: center;
+`;
 
 export const NavBarWrapper = styled.nav`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -24,6 +27,17 @@ export const NavBarWrapper = styled.nav`
   }
   p {
     align: right;
+  }
+`;
+
+export const DetailWrapper = styled.div`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+  p {
+    vertical-align: middle;
   }
 `;
 
@@ -113,27 +127,13 @@ export const ListWrapper = styled.div`
   display: flex-wrap;
 `;
 
-export const DetailWrapper = styled.div`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-
-  img {
-    width: 40%;
-    float: center;
-  }
-
-  p {
-    vertical-align: middle;
-  }
-`;
-
 export const SearchBarStyled = styled.input`
+  transition: 0.3s;
+  border-radius: 5px;
   padding: 0.5rem;
-  margin: 1rem auto;
+  margin: 1rem 2rem;
   display: block;
-  width: 40%;
+  width: 80%;
 `;
 
 export const RangeBarStyled = styled.input`
