@@ -9,6 +9,10 @@ export const BooksTitle = styled.h1`
   text-align: center;
 `;
 
+export const HomeTitle = styled.h1`
+  text-align: center;
+`;
+
 export const NavBarWrapper = styled.nav`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -104,7 +108,6 @@ export const HomeImage = styled.img`
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border: 5px solid orange;
 `;
 
 // export const Logo = styled(Link)`

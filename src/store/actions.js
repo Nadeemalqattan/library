@@ -1,12 +1,8 @@
-const CREATE_MEMBER = "CREATE_MEMBER";
+const CREATE_BOOK = "CREATE_BOOK";
 
-export const createMember = (newMember) => {
-  console.log(
-    "🚀 ~ file: actions.js ~ line 6 ~ createMember ~ newMember",
-    newMember
-  );
+export const createBook = (newBook) => {
   return {
-    type: CREATE_MEMBER,
-    payload: { newMember },
+    type: CREATE_BOOK,
+    payload: { newBook },
   };
 };

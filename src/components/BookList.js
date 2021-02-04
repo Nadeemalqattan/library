@@ -4,6 +4,8 @@ import { BookWrapper, BooksTitle } from "../styles";
 import BookItem from "./BookItem";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { BsPlusCircle } from "react-icons/bs";
 
 const BookList = () => {
   const [query, setQuery] = useState("");
@@ -18,6 +20,9 @@ const BookList = () => {
         <BooksTitle>Books</BooksTitle>
         <SearchBar setQuery={setQuery} />
         {bookList}
+        <Link to="/book/new">
+          <BsPlusCircle className="float-right" size="2em" />
+        </Link>
       </BookWrapper>
     </>
   );

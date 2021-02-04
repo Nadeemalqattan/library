@@ -1,6 +1,6 @@
 import "./App.css";
 //Route
-import { Link, Route, Switch } from "react-router";
+import { Route, Switch } from "react-router";
 //components
 import Home from "./components/HomePage";
 //members
@@ -8,9 +8,12 @@ import Members from "./components/MembersPage";
 import MemberForm from "./components/MemberForm";
 //books
 import Books from "./components/BookPage";
+import BookForm from "./components/BookForm";
 //NavBar
 import NavBar from "./components/NavBar";
 import BookList from "./components/BookList";
+//slugfy
+import slugify from "react-slugify";
 
 function App() {
   return (
@@ -20,16 +23,19 @@ function App() {
         <Route excat path="/members/new">
           <MemberForm />
         </Route>
-        <Route exact Path="/booklist">
+        <Route exact path="/booklist">
           <BookList />
         </Route>
-        <Route exact Path="/books">
+        <Route exact path="/books/new">
+          <BookForm />
+        </Route>
+        <Route exact path="/books">
           <Books />
         </Route>
-        <Route exact Path="/members">
+        <Route exact path="/members">
           <Members />
         </Route>
-        <Route exact Path="/">
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>

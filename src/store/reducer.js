@@ -1,13 +1,21 @@
+import bookData from "../books";
 import slugify from "react-slugify";
 
-switch (action.type) {
-  case "CREATE_MEMBER":
-    const { newMember } = action.payload;
-    action.payload.newMember.id =
-      state.members[state.members.length - 1].id + 1;
-    action.payload.newMember.slug = slugify(action.payload.newMember.name);
-    return {
-      ...state,
-      members: [...state.members, action.payload.newMember],
-    };
-}
+const initialState = {
+  books: bookData,
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "CREATE_BOOK":
+      action.payload.newBook.id = state.books[state.books.length - 1].id + 1;
+      action.payload.newBook.slug = slugify(action.payload.newBook.title);
+      return {
+        ...state,
+        Books: [...state.books, action.payload.newBook],
+      };
+    default:
+      return state;
+  }
+};
+export default reducer;
