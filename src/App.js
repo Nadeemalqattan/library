@@ -9,6 +9,7 @@ import MemberForm from "./components/MemberForm";
 //books
 import Books from "./components/BookPage";
 import BookForm from "./components/BookForm";
+import BookDetail from "./components/BookDetail";
 //NavBar
 import NavBar from "./components/NavBar";
 import BookList from "./components/BookList";
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path="/booklist">
           <BookList />
+        </Route>
+        <Route path="/Books/:bookSlug">
+          <BookDetail />
         </Route>
         <Route exact path="/books/new">
           <BookForm />

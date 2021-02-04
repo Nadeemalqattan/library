@@ -13,6 +13,17 @@ export const HomeTitle = styled.h1`
   text-align: center;
 `;
 
+export const DetailWrapper = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 80%;
+  margin: 2em;
+  align: center;
+  display: block;
+  padding: 0.5em;
+`;
+
 export const NavBarWrapper = styled.nav`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -31,17 +42,6 @@ export const NavBarWrapper = styled.nav`
   }
   p {
     align: right;
-  }
-`;
-
-export const DetailWrapper = styled.div`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-
-  p {
-    vertical-align: middle;
   }
 `;
 

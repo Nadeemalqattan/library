@@ -1,14 +1,20 @@
-//styling
 import { DetailWrapper } from "../styles";
+import { useParams, Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const BookDetail = (props) => {
-  const book = props.book;
+const BookDetail = () => {
+  const bookSlug = useParams().bookSlug;
+  const books = useSelector((state) => state.books);
+  const book = books.find((book) => book.slug === bookSlug);
+  if (!book) return <Redirect to="/books" />;
+
   return (
     <DetailWrapper>
-      <h4>{book.title}</h4>
+      <h1>{book.title}</h1>
+      <p>{book.author} KD</p>
       <p>{book.genre}</p>
-      <p>{book.author}</p>
     </DetailWrapper>
   );
 };
+
 export default BookDetail;
